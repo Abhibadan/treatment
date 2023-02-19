@@ -3,7 +3,7 @@
 @section('main_container')
 <div class="signup">
     <h1>Welcome User</h1>
-    <a href="{{route('patient_signupgit')}}">
+    <a href="{{route('patient_signup')}}">
         <button>
             I am a patient
         </button>
