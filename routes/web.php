@@ -18,4 +18,5 @@ use App\Http\Controllers\user_signup;
 Route::get('/',[home::class,'welcome'])->name('home');
 Route::get('sign_up/', sign_up::class)->name('sign_up');
 Route::get('sign_up/patient',[user_signup::class,'patient_signup'])->name('patient_signup');
+Route::get('sign_up/doctor',[user_signup::class,'doctor_signup'])->name('doctor_signup');
 Route::post('sign_up/patient',[user_signup::class,'patient_register'])->name('patient_register');

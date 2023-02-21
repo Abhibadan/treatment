@@ -9,7 +9,7 @@
         </button>
     </a>
     <br/>
-    <a href="#">
+    <a href="{{route('doctor_signup')}}">
         <button>
             I am a Doctor
         </button>
