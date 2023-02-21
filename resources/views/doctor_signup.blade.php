@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('main_container')
-<form method="post" action="{{route('patient_register')}}">
+<form method="post" action="{{route('doctor_register')}}">
     @csrf   
     <div class="mb-3">
         <div class="row">
@@ -40,7 +40,17 @@
                 <x-inputs lable='Email' type='email' name='email' holder='Enter valid email'/>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <x-inputs lable='Specialist' type='text' name='speacialist' holder='Enter your domain'/>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <x-inputs lable='Qualification details' type='text' name='degree' holder='degrees,comma separeted'/>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <x-inputs lable='Registration number' type='text' name='registration' holder='Enter registration number'/>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <x-inputs lable='Village/city' type='text' name='city' holder='e:City'/>
@@ -49,7 +59,7 @@
                 <x-inputs lable='District' type='text' name='distrct' holder='e:District'/>
             </div>
             <div class="col-md-4 col-sm-12">
-                <x-inputs lable='Zip Code' type='text' name='distrct' holder='e:District'/>
+                <x-inputs lable='Zip Code' type='text' name='distrct' holder='e:100001'/>
             </div>
         </div>
         <div class="row">
